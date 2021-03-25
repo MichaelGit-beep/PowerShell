@@ -1,1 +1,1 @@
-Write-Host "Hello Dev"
+Write-Host "Hello Master"
