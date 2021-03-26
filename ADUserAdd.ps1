@@ -1,4 +1,4 @@
-$displayname = Read-Host "User Full name" 
+$displayname = Read-Host "User Full Name" 
 $username = Read-host "Username"
 $surname = Read-Host "Surname"
 $samacc = Read-Host "logonname"
