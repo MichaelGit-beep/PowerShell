@@ -1,0 +1,5 @@
+$address = "192.168.77.104"
+$interface = Get-NetAdapter | Where-Object {$_.Status -eq "up"} 
+$alias = ($interface).ifalias
+remove-NetIPAddress -Interfacealias $alias -Confirm:$false
+New-NetIPAddress -InterfaceAlias $alias -AddressFamily ipv4 -IPAddress $address -PrefixLength 24 
